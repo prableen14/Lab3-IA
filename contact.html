@@ -10,16 +10,22 @@
         <h1>Contact Us</h1>
         <nav>
             <ul class="menu">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About Us</a></li>
-                <li><a href="contact.html">Contact</a></li>
+                <li id="index"><a href="index.html">Home</a></li>
+                <li id="about"><a href="about.html">About Us</a></li>
+                <li id="contact"><a href="contact.html">Contact</a></li>
             </ul>
         </nav>
     </header>
 
-    <section class="main-content">
+    <section class="contact-content">
+        <div class="contact-info">
+            <p><strong>Contact Information:</strong></p>
+            <p>Address: 401 Sunset Avenue, Windsor</p>
+            <p>Phone: +1 (764) 349-4567</p>
+            <p>Email: gdsc@uwindsor.ca</p>
+        </div>
       
-        <form>
+        <form class="contact-form" id="contactForm">
             <label for="name">Name:</label>
             <input type="text" id="name" name="name" required>
             <label for="email">Email:</label>
@@ -28,14 +34,9 @@
             <input type="text" id="subject" name="subject" required>
             <label for="message">Message:</label>
             <textarea id="message" name="message" rows="4" required></textarea>
-            <button type="submit">Submit</button>
+            <button class="learn-more" type="submit">Submit</button>
         </form>
-        <div class="contact-info">
-            <p><strong>Contact Information:</strong></p>
-            <p>Address: 401 Sunset Avenue, Windsor</p>
-            <p>Phone: +1 (764) 349-4567</p>
-            <p>Email: gdsc@uwindsor.ca</p>
-        </div>
     </section>
+    <script src="script.js"></script>
 </body>
 </html>

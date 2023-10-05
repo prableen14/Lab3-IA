@@ -1,43 +1,113 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset="UTF-8">
-    <title>University Club</title>
+    <title>Google Developers Club</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="styles.css">
 </head>
+
 <body>
     <header>
-      <div class="header-image"></div>
+        <!-- <div class="header-image"></div> -->
         <h1>Welcome to the Google Developers Club</h1>
         <nav>
             <ul class="menu">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About Us</a></li>
-                <li><a href="contact.html">Contact</a></li>
+                <li id="index"><a href="index.html">Home</a></li>
+                <li id="about"><a href="about.html">About Us</a></li>
+                <li id="contact"><a href="contact.html">Contact</a></li>
             </ul>
         </nav>
     </header>
 
     <section class="main-content">
-        <h2>About Our Club</h2>
-        <p>Welcome to our university club! We provide a platform for students to engage in various activities and make lifelong memories.</p>
-        <ul>
-            <li>Networking opportunities</li>
-            <li>Professional development</li>
-            <li>Fun social events</li>
-            <li>Community service</li>
-            <li>Leadership opportunities</li>
-        </ul>
-        <div class="slideshow-container">
-             <div class="slide fade">
-        <img src="images/1.jpeg" alt="Club Activity 1" >
+        <div class="about-club">
+            <h2 class="about-title">About Our Google Developers Club</h2>
+            <p>Welcome to our university club! We provide a platform for students to engage in various activities and
+                make
+                lifelong memories.</p>
+            <ul>
+                <li>Networking opportunities</li>
+                <li>Professional development</li>
+                <li>Fun social events</li>
+                <li>Community service</li>
+                <li>Leadership opportunities</li>
+            </ul>
+            <a href="about.html">
+                <button class="learn-more">Learn more</button>
+            </a>
         </div>
-         <div class="slide fade">
-        <img src="images/3.png" alt="Club Activity 2">
-      </div>
-      </<div>
-
+        <div class="slideshow-container">
+            <div class="slide fade">
+                <img src="https://www.tomorrowsworldtoday.com/wp-content/uploads/2022/01/image1-25.jpg"
+                    alt="Club Activity 1">
+            </div>
+            <div class="slide fade">
+                <img src="https://media.npr.org/assets/img/2016/06/03/1_blackmencode-reddingrucker_computer-edit_wide-9f1fbcd2af0a9ebdd4a081fe27ac1ea6bfb95256.jpg"
+                    alt="Club Activity 2">
+            </div>
+            </<div>
     </section>
-     <script src="script.js"></script>
+    <div class="extra-info">
+        <div class="extra-block">
+            <div class="extra-title">Connect</div>
+            <div class="extra-description">
+                Build connections with fellow students who share an interest in developer technologies within your
+                college or university. We welcome individuals from diverse backgrounds and various academic majors.
+            </div>
+        </div>
+        <div class="extra-block">
+            <div class="extra-title">Connect</div>
+            <div class="extra-description">
+                Acquire knowledge on a variety of technical subjects and develop fresh skills through interactive
+                workshops, events, informative talks, and engaging project development activities, both online and
+                offline.
+            </div>
+        </div>
+        <div class="extra-block">
+            <div class="extra-title">Connect</div>
+            <div class="extra-description">
+                Utilize your newfound knowledge to create impactful solutions for local issues. Progress in your skills,
+                career, and network while contributing to your community by assisting others in their learning journey.
+            </div>
+        </div>
+    </div>
+
+    <div class="guideline">
+        <div class="guideline-title">Stay in touch</div>
+        <div class="link-group">
+            <div class="guideline-link">
+                <a href="contact.html">
+                    <button class="contact-btn">Youtube</button>
+                </a>
+            </div>
+            <div class="guideline-link">
+                <a href="contact.html">
+                    <button class="contact-btn">LinkedIn</button>
+                </a>
+            </div>
+            <div class="guideline-link">
+                <a href="contact.html">
+                    <button class="contact-btn">Twitter</button>
+                </a>
+            </div>
+            <div class="guideline-link">
+                <a href="contact.html">
+                    <button class="contact-btn">Instagram</button>
+                </a>
+            </div>
+            <div class="guideline-link">
+                <a href="contact.html">
+                    <button class="contact-btn">Facebook</button>
+                </a>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
 </body>
+
 </html>

@@ -27,6 +27,11 @@ document.addEventListener("DOMContentLoaded", function () {
         nextSlide();
     }
 
+    function getPageName(url) {
+        var pageName = url.replace(/^\/|\.html$/g, '');
+        return pageName;
+    }
+
     // Add event listener for touchstart
     document.addEventListener("touchstart", function (event) {
         touchStartX = event.touches[0].clientX;
@@ -55,7 +60,26 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     });
 
+    var currentURL = window.location.pathname;
+
+    // Check if the current URL matches a specific pattern
+    if (currentURL) {
+        var elementToStyle = document.getElementById(getPageName(currentURL));
+        elementToStyle.style.borderBottom = 'solid 3px #585858';
+    }
+
+    if (currentURL == '/contact.html') {
+        var form = document.getElementById('contactForm');
+    
+        // Add an event listener to intercept the form submission
+        form.addEventListener('submit', function (e) {
+            e.preventDefault(); // Prevent the default form submission
+    
+            alert('Form submitted! We will contact you soon');
+    
+        });
+    }
 
     showSlide(currentImageIndex);
-    setInterval(autoAdvance, 9000); 
+    setInterval(autoAdvance, 5000);
 });
